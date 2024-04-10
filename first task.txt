@@ -1,0 +1,42 @@
+1. Write a difference between HTTP1 vs HTTP2.
+HTTP1
+•	It works on the textual format.
+•	There is a head of line blocking that blocks all the requests behind it until it doesn’t get its all resources.
+•	It uses requests resource inlining for use getting multiple pages.
+•	It compresses data by itself.
+•	It offer less security and protection when compare to HTTP2.
+HTTP2
+•	It works on the binary protocol.
+•	It allows multiplexing so one TCP connection is required for multiple requests.
+•	It uses PUSH frame by server that collects all multiple pages.
+•	It uses HPACK for data compression.
+•	It offer more security and protection.
+****************************************************************************
+2. Write about objects and its internal representation in Java Script.
+Object
+Objects in JavaScript is its most important data-type and forms the building blocks for modern Javascript.These objects are quite different from Javascript’s primitive data-types.
+	Objects are more complex and each object may contain any combination of these primitive data-types as well as reference data-types.
+Objects in Javascript is defined as  an unordered collection of related data, of primitive or refeerence types in the form of “key:value” pairs. These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+For Example: If the object is a student, it will have properties like name, age, address, id and methods like updateAddress, updateName..
+Creating object by object literal
+	The syntax of creating object using object literal is given below:
+	object={property1:value1,property2:value2,…..propertyN:valueN}
+	Example:
+
+		Var person={
+		Fname: “XXX”,
+		Mname: “YYY”,
+		Age: 25
+	};
+By creating instace of object directly.
+	The syntax of creating object directly is given below:
+	Var objectname=new Object();
+	Here, new keyword is used to create object.
+	Example:
+	Var emp=new Object();
+	emp.id=101;
+	emp.name= “XXX”
+Accessing JavaScript objects:
+	The  syntax for accessing the property of an object is:
+	objectName.property
+	Example: person.Fname
